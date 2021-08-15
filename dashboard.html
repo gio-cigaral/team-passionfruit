@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,22 +12,20 @@
   <div class="container">
     <nav class="navigation">
       <button id="menu-button" class="menu-button">
-        <img src="assets/burger-menu-icon.svg" alt="Menu"></button>
-      <div id="menu-container">
-        <ul id="menu" class="slide-menu">
-          <li class="menu-item">
-              <a href="dashboard.html">Dashboard</a>
-          </li>
-          <li class="menu-item">
-              <a href="goal.html">Set New Goal</a>
-          </li>
-          <li class="menu-item">
-              <a href="budget.html">Create Budget</a>
-          </li>
+        <img src="assets/burger-menu-icon.svg" alt="Menu">
+      </button>
+      <ul id="menu" class="slide-menu">
+        <li>
+          <a href="#">Dashboard</a>
+        </li>
+        <li>
+          <a href="#">Set budget</a>
+        </li>
+        <li>
+          <a href="#">Set goal</a>
+        </li>
       </ul>
-    </div>
-  </nav>
-
+    </nav>
     <div class="row nav-row">
       <h1>
         Dashboard
@@ -50,7 +48,7 @@
     <div class="row chart-row">
       <div class="circular">
         <div class="inner"></div>
-        <div class="number">100%</div>
+        <div class="number">100% Saved</div>
         <div class="circle">
           <div class="bar left">
             <div class="progress"></div>
@@ -62,7 +60,7 @@
       </div>
     </div>
 
-    <!-- Animates the progress bar number as it is incremented -->
+    <!-- Animates the circular progress bar number as it is incremented -->
     <script type="text/javascript">
       const numb = document.querySelector(".number");
       let counter = 0;
@@ -81,7 +79,7 @@
         <A HREF="budget.html"><button type="button" class="button_slide slide_down">Add Expense</button></A>
       </div>
       <div class="">
-        <A HREF = "goal.html"><button type="button" class="button_slide slide_down">Set New Goal</button></A>
+        <button type="button" class="button_slide slide_down">Set New Goal</button>
       </div>
     </div>
 
@@ -100,13 +98,19 @@
 
       <!-- This is where our expenses chart is shown -->
       <div class="row expenses-row">
-        <div class="">
-          Expenses chart placeholder
+
+        <div id="myProgress">
+          <div id="myBar"></div>
         </div>
+
+        <br>
+
       </div>
+      <!-- <button onclick="move()">Click Me</button> -->
 
     </div>
 
+    <script src="scripts/progressBar.js"></script
     <script src="dashboard.js"></script>
 </body>
 

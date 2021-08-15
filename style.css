@@ -4,6 +4,7 @@ html * {
 }
 
 p {
+  color: red;
   padding-left: 10px;
 }
 
@@ -47,7 +48,6 @@ h2 {
 .income-form {
   font-size: 25px;
 }
-
 .chart-row {
   margin: 5%;
 }
@@ -95,7 +95,6 @@ h2 {
   margin: 50px auto 0 auto;
   text-align: center;
 }
-
 hr {
   margin-top: 20px;
   border: none;
@@ -103,7 +102,7 @@ hr {
   color: #fff;
   background-color: #fff;
   height: 1px;
-  width: 90vw;
+  width: 50%;
 }
 
 /* Pie Chart Styling */
@@ -191,12 +190,30 @@ body {
   margin: 0 auto;
 }
 
+/* Progress Bar */
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+}
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+}
+
+#myBar {
+  width: 20%;
+  height: 30px;
+  background-color: #04AA6D;
+  border-radius: 20px;
+}
+
+
 /* Navigation */
 .slide-menu {
   visibility: hidden;
-  background-color: #f5f6f9;
+  background-color: aqua;
   width: 33vw;
-  height: 100%;
   transform: translateX(-100%);
   transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1),
     visibility 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -205,7 +222,6 @@ body {
 .isShown {
   visibility: visible;
   transform: translateX(0);
-  height: 100%;
 }
 
 .navigation {
@@ -258,8 +274,7 @@ fieldset {
 .pure-control-group {
   padding: 10px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+  
 }
 
 /* 
